@@ -1,0 +1,7 @@
+com/example/EntityMangerUtil.class
+com/example/MyApplication.class
+com/example/model/Book.class
+com/example/resource/BookResource.class
+com/example/repositary/BookRepository.class
+com/example/data/Language.class
+com/example/repositary/BookRepositoryStub.class
