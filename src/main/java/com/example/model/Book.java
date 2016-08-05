@@ -1,6 +1,9 @@
 package com.example.model;
 
-import javax.persistence.*;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -54,6 +57,7 @@ public class Book {
     public void setPrice(String price) {
         this.price = price;
     }
+
 
     @Override
     public boolean equals(Object o) {

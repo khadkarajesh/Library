@@ -11,14 +11,10 @@ import java.util.List;
 public class BookRepositoryStub implements BookRepository {
     private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("abc");
     private EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-
-    /*@PersistenceContext(unitName = "abc")
-    EntityManager entityManager;*/
     private EntityTransaction entityTransaction = entityManager.getTransaction();
 
     public List<Book> getAllBooks() {
-        return null;
+        return entityManager.createQuery("SELECT r FROM Book r",Book.class).getResultList();
     }
 
     public Book findBookById(int id) {

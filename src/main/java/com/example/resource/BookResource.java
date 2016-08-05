@@ -3,12 +3,10 @@ package com.example.resource;
 import com.example.model.Book;
 import com.example.repositary.BookRepositoryStub;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 
 @Path("books")
@@ -18,17 +16,8 @@ public class BookResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public String getResult() {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("abc");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        entityManager.getTransaction().begin();
-        Book book = new Book();
-        book.setName("test-123");
-        book.setPrice("2000");
-        book.setPublication("press");
-        entityManager.persist(book);
-        entityManager.getTransaction().commit();
-        return "Hello world to my project";
+    public List<Book> getResult() {
+        return bookRepositoryStub.getAllBooks();
     }
 
     @GET
