@@ -14,18 +14,21 @@ public class BookRepositoryStub implements BookRepository {
     private EntityTransaction entityTransaction = entityManager.getTransaction();
 
     public List<Book> getAllBooks() {
-        return entityManager.createQuery("SELECT r FROM Book r",Book.class).getResultList();
+        return entityManager.createQuery("SELECT r FROM Book r", Book.class).getResultList();
     }
 
     public Book findBookById(int id) {
         return entityManager.find(Book.class, id);
     }
 
-    public Book updateBook(Book book) {
+    public Book updateBook(int bookId, Book book) {
         entityTransaction.begin();
-        Book book1 = entityManager.merge(book);
+        Book b = findBookById(bookId);
+        b.setName(book.getName());
+        b.setPublication(book.getPublication());
+        b.setPrice(book.getPrice());
         entityTransaction.commit();
-        return book1;
+        return b;
     }
 
     public void deleteBook(int id) {

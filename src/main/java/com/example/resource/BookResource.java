@@ -48,9 +48,9 @@ public class BookResource {
 
     @PUT
     @Path("{bookId}")
-    @Produces({MediaType.TEXT_PLAIN})
+    @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
-    public Response updateBook(Book book) {
-        return Response.status(Response.Status.ACCEPTED).entity(bookRepositoryStub.updateBook(book)).build();
+    public Response updateBook(@PathParam("bookId") int id,Book book) {
+        return Response.status(Response.Status.ACCEPTED).entity(bookRepositoryStub.updateBook(id,book)).build();
     }
 }
