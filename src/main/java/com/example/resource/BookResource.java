@@ -1,9 +1,10 @@
 package com.example.resource;
 
 import com.example.model.Book;
-import com.example.repositary.BookRepositoryStub;
+import com.example.repository.BookRepositoryStub;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -16,8 +17,14 @@ public class BookResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public List<Book> getResult() {
-        return bookRepositoryStub.getAllBooks();
+    public Response getResult(@QueryParam("max") int max, @QueryParam("offSet") int offSet) {
+        System.out.println("max = " + max + " :offset" + offSet);
+        List<Book> books = bookRepositoryStub.getAllBooks(max, offSet);
+        if (books == null && books.size() < 0) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        return Response.ok().entity(new GenericEntity<List<Book>>(books) {
+        }).build();
     }
 
     @GET
@@ -50,7 +57,7 @@ public class BookResource {
     @Path("{bookId}")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
-    public Response updateBook(@PathParam("bookId") int id,Book book) {
-        return Response.status(Response.Status.ACCEPTED).entity(bookRepositoryStub.updateBook(id,book)).build();
+    public Response updateBook(@PathParam("bookId") int id, Book book) {
+        return Response.status(Response.Status.ACCEPTED).entity(bookRepositoryStub.updateBook(id, book)).build();
     }
 }

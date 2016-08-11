@@ -1,25 +1,25 @@
 package com.example.model;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by rajesh on 7/28/16.
- */
 
 @Entity
 @XmlRootElement
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
     private String publication;
     private String price;
 
-    @Id
-    @Column(name = "id")
+//    @OneToMany(cascade={CascadeType.ALL}, targetEntity=Author.class)
+//    private List<Author> authors;
+
     public int getId() {
         return id;
     }
@@ -28,8 +28,6 @@ public class Book {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -38,8 +36,6 @@ public class Book {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "publication")
     public String getPublication() {
         return publication;
     }
@@ -48,8 +44,6 @@ public class Book {
         this.publication = publication;
     }
 
-    @Basic
-    @Column(name = "price")
     public String getPrice() {
         return price;
     }
@@ -58,6 +52,13 @@ public class Book {
         this.price = price;
     }
 
+//    public List<Author> getAuthor() {
+//        return authors;
+//    }
+//
+//    public void setAuthor(List<Author> author) {
+//        this.authors = author;
+//    }
 
     @Override
     public boolean equals(Object o) {

@@ -1,8 +1,8 @@
 package com.example.resource;
 
 import com.example.model.Author;
-import com.example.repositary.AuthorRepository;
-import com.example.repositary.AuthorRepositoryStub;
+import com.example.repository.AuthorRepository;
+import com.example.repository.AuthorRepositoryStub;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;

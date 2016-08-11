@@ -9,6 +9,7 @@ import java.util.Date;
 @Entity
 public class Author {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column(name = "first_name")
