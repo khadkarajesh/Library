@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47ad134f-a269-4ee9-98ac-b596b0aa912f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_javax_persistence_2_1_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/repositary/BookRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/repositary/BookRepositoryStub.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/repositary/BookRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/repositary/BookRepositoryStub.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/repositary/AuthorRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/AuthorRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/repositary/AuthorRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/AuthorRepositoryStub.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/repositary/BookRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/repositary/BookRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/model/Book.class" afterPath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/model/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/resource/BookResource.class" afterPath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/com/example/resource/BookResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/model/Book.class" afterPath="$PROJECT_DIR$/target/classes/com/example/model/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/resource/BookResource.class" afterPath="$PROJECT_DIR$/target/classes/com/example/resource/BookResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/LibraryManagement_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/LibraryManagement_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LibraryManagement.iml" afterPath="$PROJECT_DIR$/LibraryManagement.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/model/Author.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/model/Author.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/model/Book.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/model/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/resource/AuthorResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/resource/AuthorResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/resource/BookResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/resource/BookResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/Library-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
     </list>
     <ignored path="LibraryManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookRepositoryStub.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookRepositoryStub.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="122">
+              <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -121,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/resource/BookResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+            <state relative-caret-position="285">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -216,8 +190,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/model/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/resource/BookResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java" />
       </list>
     </option>
   </component>
@@ -1155,12 +1129,12 @@
       <workItem from="1470828754518" duration="1423000" />
       <workItem from="1470830408379" duration="1176000" />
       <workItem from="1470874837855" duration="348000" />
-      <workItem from="1470887228711" duration="6405000" />
+      <workItem from="1470887228711" duration="7561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83666000" />
+    <option name="totallyTimeSpent" value="84822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1173,7 +1147,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33049646" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -1194,8 +1168,8 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539007" sideWeight="0.40701002" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3858156" sideWeight="0.48569384" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2539007" sideWeight="0.40701002" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3858156" sideWeight="0.48569384" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198732" sideWeight="0.33070865" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.6692913" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1590,14 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/AuthorRepositoryStub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1606,31 +1572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/AuthorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/ea197b20/b6b1cabc-6c76-4eae-83d6-ddbf97d80cbc/library.BOOK">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1659,10 +1604,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ea197b20/b6b1cabc-6c76-4eae-83d6-ddbf97d80cbc/library.BOOK">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/resource/BookResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        <state relative-caret-position="285">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/repository/BookRepositoryStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
           <folding />
         </state>
       </provider>

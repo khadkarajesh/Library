@@ -17,10 +17,10 @@ public class BookResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getResult(@QueryParam("max") int max, @QueryParam("offSet") int offSet) {
-        System.out.println("max = " + max + " :offset" + offSet);
-        List<Book> books = bookRepositoryStub.getAllBooks(max, offSet);
-        if (books == null && books.size() < 0) {
+    public Response getResult(@QueryParam("page") int pageIndex, @QueryParam("offSet") int offSet) {
+        System.out.println("max = " + pageIndex + " :offset" + offSet);
+        List<Book> books = bookRepositoryStub.getAllBooks(pageIndex, offSet);
+        if (books == null || books.size() <= 0) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return Response.ok().entity(new GenericEntity<List<Book>>(books) {

@@ -13,9 +13,9 @@ public class BookRepositoryStub implements BookRepository {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
     private EntityTransaction entityTransaction = entityManager.getTransaction();
 
-    public List<Book> getAllBooks(int max, int offSet) {
+    public List<Book> getAllBooks(int pageIndex, int offSet) {
         Query query = entityManager.createQuery("select b from Book b");
-        return query.setMaxResults(offSet).getResultList();
+        return query.setMaxResults(offSet).setFirstResult((pageIndex - 1) * offSet).getResultList();
     }
 
     public Book findBookById(int id) {
