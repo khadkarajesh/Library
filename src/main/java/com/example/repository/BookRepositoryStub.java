@@ -47,4 +47,10 @@ public class BookRepositoryStub implements BookRepository {
         entityTransaction.commit();
         return book;
     }
+
+    public List<Book> searchBookByName(String bookName) {
+        Query query = entityManager.createQuery("select b from Book b where b.name like :name");
+        query.setParameter("name", "%" + bookName + "%");
+        return query.getResultList();
+    }
 }

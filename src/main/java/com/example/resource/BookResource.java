@@ -20,9 +20,6 @@ public class BookResource {
     public Response getResult(@QueryParam("page") int pageIndex, @QueryParam("offSet") int offSet) {
         System.out.println("max = " + pageIndex + " :offset" + offSet);
         List<Book> books = bookRepositoryStub.getAllBooks(pageIndex, offSet);
-        if (books == null || books.size() <= 0) {
-            return Response.status(Response.Status.NOT_FOUND).build();
-        }
         return Response.ok().entity(new GenericEntity<List<Book>>(books) {
         }).build();
     }

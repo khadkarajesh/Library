@@ -15,4 +15,6 @@ public interface BookRepository {
     void deleteBook(int id);
 
     Book createBook(Book book);
+
+    List<Book> searchBookByName(String bookName);
 }

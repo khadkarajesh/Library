@@ -51,7 +51,7 @@
         <data-type>varchar(255)</data-type>
       </column>
       <column id="17" parent="4" name="PRICE">
-        <data-type>varchar(255)</data-type>
+        <data-type>int(11)</data-type>
       </column>
       <column id="18" parent="4" name="PUBLICATION">
         <data-type>varchar(255)</data-type>
