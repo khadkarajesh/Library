@@ -2,11 +2,13 @@ package com.example.repository;
 
 
 import com.example.model.Book;
+import com.example.model.BookResponse;
+import com.example.model.BookSearch;
 
 import java.util.List;
 
 public interface BookRepository {
-    List<Book> getAllBooks(int max, int offSet);
+    BookResponse getAllBooks(int max, int offSet);
 
     Book findBookById(int id);
 
@@ -17,4 +19,6 @@ public interface BookRepository {
     Book createBook(Book book);
 
     List<Book> searchBookByName(String bookName);
+
+    List<Book> searchBookByObject(BookSearch bookSearch);
 }

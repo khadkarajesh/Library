@@ -1,6 +1,8 @@
 package com.example.repository;
 
 import com.example.model.Book;
+import com.example.model.BookResponse;
+import com.example.model.BookSearch;
 
 import javax.ejb.Stateless;
 import javax.persistence.*;
@@ -13,9 +15,13 @@ public class BookRepositoryStub implements BookRepository {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
     private EntityTransaction entityTransaction = entityManager.getTransaction();
 
-    public List<Book> getAllBooks(int pageIndex, int offSet) {
+    public BookResponse getAllBooks(int pageIndex, int offSet) {
         Query query = entityManager.createQuery("select b from Book b");
-        return query.setMaxResults(offSet).setFirstResult((pageIndex - 1) * offSet).getResultList();
+        int totalBooks=query.getResultList().size();
+        BookResponse bookResponse=new BookResponse();
+        bookResponse.setTotalCount(totalBooks);
+        bookResponse.setBooks(query.setMaxResults(offSet).setFirstResult(pageIndex * offSet).getResultList());
+        return bookResponse;
     }
 
     public Book findBookById(int id) {
@@ -51,6 +57,13 @@ public class BookRepositoryStub implements BookRepository {
     public List<Book> searchBookByName(String bookName) {
         Query query = entityManager.createQuery("select b from Book b where b.name like :name");
         query.setParameter("name", "%" + bookName + "%");
+        return query.getResultList();
+    }
+
+    public List<Book> searchBookByObject(BookSearch bookSearch) {
+        Query query = entityManager.createQuery("select b from Book b where b.price between:startPrice and :endPrice");
+        query.setParameter("startPrice", bookSearch.getStartPrice());
+        query.setParameter("endPrice", bookSearch.getEndPrice());
         return query.getResultList();
     }
 }

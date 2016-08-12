@@ -1,13 +1,12 @@
 package com.example.resource;
 
 import com.example.model.Book;
+import com.example.model.BookResponse;
 import com.example.repository.BookRepositoryStub;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 
 @Path("books")
@@ -19,9 +18,8 @@ public class BookResource {
     @Produces({MediaType.APPLICATION_JSON})
     public Response getResult(@QueryParam("page") int pageIndex, @QueryParam("offSet") int offSet) {
         System.out.println("max = " + pageIndex + " :offset" + offSet);
-        List<Book> books = bookRepositoryStub.getAllBooks(pageIndex, offSet);
-        return Response.ok().entity(new GenericEntity<List<Book>>(books) {
-        }).build();
+        BookResponse bookResponse= bookRepositoryStub.getAllBooks(pageIndex, offSet);
+        return Response.ok().entity(bookResponse).build();
     }
 
     @GET
